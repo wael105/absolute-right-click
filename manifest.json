@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Interaction Unlocker",
+  "version": "1.0.0",
+  "description": "Restore selection, copying, right-clicking, image, and link interactions on sites you choose.",
+  "icons": { "16": "icons/icon.svg", "48": "icons/icon.svg", "128": "icons/icon.svg" },
+  "permissions": ["storage", "tabs", "scripting"],
+  "host_permissions": ["http://*/*", "https://*/*"],
+  "background": { "service_worker": "background.js", "type": "module" },
+  "action": { "default_popup": "popup/popup.html", "default_title": "Interaction Unlocker" },
+  "options_ui": { "page": "options/options.html", "open_in_tab": true },
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["shared/domain-key.js", "content.js"],
+    "run_at": "document_start",
+    "all_frames": true,
+    "match_about_blank": true
+  }]
+}

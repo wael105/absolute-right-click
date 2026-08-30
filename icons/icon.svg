@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Interaction Unlocker">
+  <rect width="128" height="128" rx="28" fill="#2563eb"/>
+  <path fill="#fff" d="M37 27h54v13H50v48H37V27Zm41 26h13v48H50V88h28V53Zm-28-1h28v13H50V52Z"/>
+  <path fill="#bfdbfe" d="M37 101h54v-13H50V40H37v61Z"/>
+</svg>

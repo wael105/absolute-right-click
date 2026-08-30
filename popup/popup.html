@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Interaction Unlocker</title><link rel="stylesheet" href="popup.css"></head>
+<body><main>
+  <header><div class="title-row"><h1>Interaction Unlocker</h1><button id="reload" class="icon-button" type="button" title="Reload page to apply settings" aria-label="Reload page to apply settings" hidden>↻</button></div><p id="site-name">Checking this page…</p></header>
+  <section id="unavailable" hidden><p>This page is protected by the browser, so extensions cannot change it.</p></section>
+  <section id="controls" hidden>
+    <label class="master"><span>Enable on this site</span><input id="enabled" type="checkbox"><i></i></label>
+    <button id="enable-all" type="button">Enable all features for this site</button>
+    <fieldset id="features"><legend>Features</legend>
+      <label><input data-feature="selection" type="checkbox"> Text selection</label>
+      <label><input data-feature="copy" type="checkbox"> Copy text</label>
+      <label><input data-feature="rightClick" type="checkbox"> Right-click menu</label>
+      <label><input data-feature="images" type="checkbox"> Images</label>
+      <label><input data-feature="links" type="checkbox"> Links</label>
+    </fieldset>
+  </section>
+  <p id="status" aria-live="polite"></p>
+  <button id="manage-sites" class="text-button" type="button">Manage saved sites</button>
+</main><script src="../shared/domain-key.js"></script><script type="module" src="popup.js"></script></body></html>

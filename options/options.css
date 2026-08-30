@@ -1,0 +1,11 @@
+:root { color-scheme: light dark; font: 15px/1.45 system-ui, sans-serif; }
+body { margin: 0; background: Canvas; color: CanvasText; }
+main { width: min(720px, calc(100% - 32px)); margin: 44px auto; }
+h1 { margin: 0; font-size: 25px; } header p { margin: 6px 0 24px; color: GrayText; }
+#sites { display: grid; gap: 10px; } .empty { margin: 0; padding: 24px; text-align: center; color: GrayText; border: 1px solid color-mix(in srgb, CanvasText 20%, transparent); border-radius: 10px; }
+.site { overflow: hidden; border: 1px solid color-mix(in srgb, CanvasText 22%, transparent); border-radius: 10px; }
+.site-toggle { width: 100%; display: flex; align-items: center; gap: 12px; padding: 13px 15px; border: 0; background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.site-toggle:hover { background: color-mix(in srgb, CanvasText 7%, transparent); }.hostname { flex: 1; overflow-wrap: anywhere; font-weight: 650; }.site-status { color: GrayText; font-size: 13px; }.chevron { font-size: 18px; line-height: 1; }
+.site-panel { padding: 4px 15px 15px; border-top: 1px solid color-mix(in srgb, CanvasText 16%, transparent); }.permissions { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }.permission { display: flex; align-items: center; gap: 10px; min-height: 33px; }.permission-name { flex: 1; }.permission-status { color: GrayText; font-size: 13px; }
+button { border: 0; border-radius: 7px; padding: 7px 10px; background: #2b6eea; color: white; font: inherit; font-weight: 650; cursor: pointer; } button:disabled { opacity: .5; cursor: default; }.remove { background: transparent; color: #c62828; }.remove:hover:not(:disabled) { background: color-mix(in srgb, #c62828 12%, transparent); }.remove-all { width: 100%; margin-top: 15px; background: #c62828; }
+#status { min-height: 1.4em; margin: 14px 0 0; color: GrayText; font-size: 13px; }

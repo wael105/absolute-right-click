@@ -1,0 +1,13 @@
+:root { color-scheme: light dark; font: 14px/1.4 system-ui, sans-serif; }
+[hidden] { display: none !important; }
+body { margin: 0; min-width: 280px; background: Canvas; color: CanvasText; }
+main { padding: 16px; } h1 { font-size: 17px; margin: 0; } header p { margin: 3px 0 16px; color: GrayText; overflow-wrap: anywhere; }
+.title-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.icon-button { width: 28px; height: 28px; padding: 0; border-radius: 50%; background: transparent; color: CanvasText; font-size: 21px; line-height: 1; }
+.icon-button:hover { background: color-mix(in srgb, CanvasText 10%, transparent); }
+section { display: grid; gap: 12px; } .master { display: flex; align-items: center; justify-content: space-between; font-weight: 650; }
+button { border: 0; border-radius: 7px; padding: 9px 10px; font: inherit; font-weight: 650; cursor: pointer; background: #2b6eea; color: white; }
+fieldset { margin: 2px 0 0; padding: 10px; border: 1px solid color-mix(in srgb, CanvasText 24%, transparent); border-radius: 8px; display: grid; gap: 8px; }
+fieldset:disabled { opacity: .55; } label { cursor: pointer; } input { accent-color: #2b6eea; } #status { min-height: 1.4em; color: GrayText; font-size: 12px; margin: 13px 0 0; }
+.text-button { width: 100%; margin-top: 8px; background: transparent; color: #2b6eea; }
+.text-button:hover { background: color-mix(in srgb, #2b6eea 12%, transparent); }
